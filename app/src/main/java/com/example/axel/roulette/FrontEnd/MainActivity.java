@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
         b_start = findViewById(com.example.axel.roulette.R.id.buttonStart);
         b_up = findViewById(com.example.axel.roulette.R.id.buttonUp);
         b_down = findViewById(com.example.axel.roulette.R.id.buttonDown);
-        buttonToHistory= findViewById(R.id.go_to_number_list_button);
+        buttonToHistory= findViewById(R.id.go_to_history);
         selected = findViewById(com.example.axel.roulette.R.id.imageSelected);
         imageRoulette = findViewById(com.example.axel.roulette.R.id.rouletteImage);
         log = findViewById(R.id.recyclerview);
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
         this.blnButtonRotation = true;
         b_start.setVisibility(View.VISIBLE);
         String text = "You threw " + String.valueOf((int)(((double)this.intNumber)
-                - Math.floor(((double)this.lngDegrees) / (360.0d / ((double)this.intNumber))))) + " Click here to see a fun fact about this number";
+                - Math.floor(((double)this.lngDegrees) / (360.0d / ((double)this.intNumber)))));
         Item newItem = new Item(text);
         logitems.add(0, newItem);
         itemViewModel.insert(newItem);

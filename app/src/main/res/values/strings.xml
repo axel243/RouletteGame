@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Roulette</string>
+    <string name="todo">TODO</string>
+    <string name="title_number_list">NumberList</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fact_fragment">FactFragment</string>
+</resources>
